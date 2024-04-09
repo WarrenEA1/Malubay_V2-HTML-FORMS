@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 id="resto-name">Food Daily</h1>
+        <p id="motto"><em>Discover the world on your plate with Food Daily</em></p>
+        <img src="logo1.png" alt="logo" name="logo">
+    </header>
+
+    <form action="" method="get"class="reservation-form"> 
+        <div id="subheader">
+          <h3>Reservation Form</h3> <br>
+        </div>
+
+        <div class="form-row">
+          <label for="name">Name: </label>
+          <input id="name" name ="name" type="text" placeholder="Enter name"/>
+        </div>
+    
+        <div class="form-row">
+          <label for = "email">Email: </label>
+          <input id="email" name="email" type="email" placeholder="customer@example.com"/>
+        </div>
+
+        <div class="form-row">
+          <label for="age">Age:</label>
+          <input id="age" name="age" type="number" placeholder="Enter your age" required>
+        </div>
+
+        <fieldset class="legacy-form-row">
+         <legend>Option</legend>
+          <input type="radio" value="Dine-in" id="option1" name="service-type">
+          <label for="option1" class="radio-label">Dine-in</label>
+
+          <input type="radio" value="Take-out" id="option2" name="service-type">
+          <label for="option2" class="radio-label">Take-out</label>
+        </fieldset>
+
+        <div class="menu">
+          <ul>
+            <li class="active"><a href="#">Type of Cuisine</a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li class="hover-menu"><a href="#">Filipino</a>
+                    <div class="sub-menu-2">
+                      <ul>
+                        <li><a href="#">Adobo</a></li>
+                        <li><a href="#">Menudo</a><i></i></li>
+                        <li><a href="#">Tapsilog</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Italian</a><i></i></li>
+                  <li><a href="#">Chinese</a></li>
+                  <li class="hover-menu"><a href="#">Healthy Menu</a>
+                   <div class="sub-menu-2">
+                     <ul>
+                       <li><a href="#">Vegetarian</a></li>
+                       <li><a href="#">Vegan</a><i></i></li>
+                       <li><a href="#">Gluten-Free</a></li>
+                     </ul>
+                   </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="active"><a href="#"><i></i>Mode of Payment</a>
+                <div class="sub-menu-1">
+                  <ul>
+                    <li><a href="#">Cash</a></li>
+                    <li><a href="#">Gcash</a><i></i></li>
+                    <li><a href="#">Card</a></li>
+                  </ul>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <div class="form-row">
+          <label for="comment">Comment</label>
+          <textarea name="comment" id="comment"></textarea>
+            <div class="instructions">Thank you for visiting!</div>
+        </div>
+        <div class="form-row">
+          <button id="cancel">Cancel</button>
+          <button id="place-order">Place Order</button>
+        </div>
+    </form>
+
+</body>
+</html>
